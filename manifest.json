@@ -23,6 +23,7 @@
 			["./ex/parser/*.py", []],
 			["./plugins/*.py", []],
 			["./ex/plat/*.py", []],
+			["./icons/*.png", []],
 
 			["./Development/*.*", []]
 
@@ -48,6 +49,7 @@
 			["./plugins/*.py", []],
 			["./ex/parsers/*.py", []],
 			["./ex/parsers/new/*.py", []],
+			["./icons/*.png", []],
 			["./ex/plat/*.py", []]
 		]
 	}
