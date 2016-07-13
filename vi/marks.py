@@ -14,10 +14,11 @@ class Marks(object):
         # TODO: support multiple selections
         # TODO: Use id attribute; references might change.
 
-        path = "Packages/Vintageous/icons/icon_"
+        path = "Packages/Vintageous/icons/ICON_"
         extension = ".png"
 
-        icon = path + name + extension
+        # use ascii number of the character
+        icon = path + str(ord(name)) + extension
 
         # Remove old mark from view if one already exists (mostly for marks in another view)
         if name in _MARKS:
@@ -25,7 +26,6 @@ class Marks(object):
 
         m = [s for s in view.sel()]
         b = sublime.Region(m[0].b, m[0].b)
-
         view.add_regions(name, [b], "comment", icon, sublime.DRAW_EMPTY)
 
         win, view, rowcol = view.window(), view, view.rowcol(view.sel()[0].b)

@@ -1,5 +1,5 @@
 {
-	"shell_cmd": "./build.sh",
+	"shell_cmd": "./bin/build.sh",
 	"windows":
 	{
 		"shell_cmd": "powershell -noninteractive -file \"$project_path\\bin\\Build.ps1\""
